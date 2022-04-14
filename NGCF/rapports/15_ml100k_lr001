@@ -1,0 +1,27 @@
+hephaestos@toto:/media/stock/projets/20220130_CNAM_graphs/NGCF-PyTorch-new/NGCF$ python3 main.py --dataset ml-100k --regs [1e-5] --embed_size 64 --layer_size [64,64,64] --lr 0.001 --save_flag 0 --pretrain 0 --batch_size 1024 --epoch 20 --verbose 1 --node_dropout [0.1] --mess_dropout [0.1,0.1,0.1]
+n_users=943, n_items=1682
+n_interactions=100000
+n_train=90404, n_test=9596, sparsity=0.06305
+already load adj matrix (2625, 2625) 0.018890857696533203
+Epoch 0 [4.1s]: train==[51.80825=51.80410 + 0.00415]
+Epoch 1 [4.1s]: train==[29.89862=29.89432 + 0.00430]
+Epoch 2 [4.1s]: train==[23.73901=23.73454 + 0.00448]
+Epoch 3 [4.2s]: train==[21.72424=21.71960 + 0.00464]
+Epoch 4 [4.3s]: train==[20.89312=20.88833 + 0.00479]
+Epoch 5 [4.1s]: train==[19.69673=19.69178 + 0.00495]
+Epoch 6 [4.1s]: train==[18.62939=18.62427 + 0.00512]
+Epoch 7 [4.1s]: train==[17.68369=17.67840 + 0.00530]
+Epoch 8 [4.1s]: train==[17.00652=17.00104 + 0.00548]
+Epoch 9 [4.1s + 0.3s]: train==[16.35150=16.34584 + 0.00566], recall=[0.29570, 0.65426], precision=[0.11315, 0.05676], hit=[0.82291, 0.98091], ndcg=[0.23667, 0.35437]
+Epoch 10 [4.1s]: train==[15.96896=15.96313 + 0.00583]
+Epoch 11 [4.1s]: train==[15.29788=15.29186 + 0.00601]
+Epoch 12 [4.1s]: train==[14.91360=14.90739 + 0.00620]
+Epoch 13 [4.2s]: train==[14.46475=14.45836 + 0.00639]
+Epoch 14 [4.1s]: train==[14.10653=14.09996 + 0.00657]
+Epoch 15 [4.1s]: train==[13.60216=13.59541 + 0.00675]
+Epoch 16 [4.1s]: train==[13.27159=13.26466 + 0.00693]
+Epoch 17 [4.1s]: train==[12.88760=12.88049 + 0.00711]
+Epoch 18 [4.1s]: train==[12.72192=12.71462 + 0.00729]
+Epoch 19 [4.2s + 0.3s]: train==[12.25073=12.24326 + 0.00747], recall=[0.33578, 0.69495], precision=[0.13722, 0.06142], hit=[0.86002, 0.98940], ndcg=[0.28526, 0.39987]
+Best Iter=[1]@[83.2]    recall=[0.33578 0.48282 0.57568 0.64002 0.69495], precision=[0.13722    0.10196 0.08247 0.07029 0.06142], hit=[0.86002   0.93955 0.96501 0.97561 0.98940], ndcg=[0.28526 0.33108 0.36222 0.38355 0.39987]
+hephaestos@toto:/media/stock/projets/20220130_CNAM_graphs/NGCF-PyTorch-new/NGCF$ 
