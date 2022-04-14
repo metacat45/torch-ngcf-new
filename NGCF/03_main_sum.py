@@ -7,9 +7,11 @@ Created on March 24, 2020
 import torch
 import torch.optim as optim
 
-from NGCF import NGCF
+from NGCF_sum2 import NGCF
 from utility.helper import *
 from utility.batch_test import *
+
+from torch.nn.utils import clip_grad_norm_
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -56,6 +58,7 @@ if __name__ == '__main__':
                                                                               neg_i_g_embeddings)
             optimizer.zero_grad()
             batch_loss.backward()
+            clip_grad_norm_(model.parameters(), max_norm = 2)
             optimizer.step()
 
             loss += batch_loss

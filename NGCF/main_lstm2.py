@@ -7,7 +7,7 @@ Created on March 24, 2020
 import torch
 import torch.optim as optim
 
-from NGCF import NGCF
+from NGCF_LSTM2 import NGCF
 from utility.helper import *
 from utility.batch_test import *
 
